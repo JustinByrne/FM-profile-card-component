@@ -6,28 +6,66 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
         <title>Frontend Mentor | Profile card component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
         <link href="./tailwind.css" rel="stylesheet">
     </head>
     
-    <body>
-        Victor Crest
-        26
-        London
-      
-        80K
-        Followers
-      
-        803K
-        Likes
-      
-        1.4K
-        Photos
+    <body class="font-kumbh relative h-screen bg-darkCyan overflow-hidden">
+        <div class="absolute w-[500px] lg:w-[1000px] right-1/2 bottom-2/3 lg:-left-72 lg:bottom-96">
+            <img src="images/bg-pattern-top.svg">
+        </div>
+        <div class="absolute w-[700px] lg:w-[1000px] left-1/2 top-1/2 lg:-right-64 lg:top-[25rem]">
+            <img src="images/bg-pattern-bottom.svg">
+        </div>
 
-        <footer>
-            <p>
-                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-                Coded by <a href="https://github.com/JustinByrne">Justin Byrne</a>.
-            </p>
-        </footer>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 lg:w-96">
+            <main class="mb-3 rounded-xl w-full bg-white shadow-lg">
+                <div class="bg-darkCyan h-36 rounded-t-xl" style="background-image: url('/images/bg-pattern-card.svg');"></div>
+    
+                <div class="relative text-center px-8 pb-6 pt-16 lg:pt-20 text-darkGray">
+                    <img src="images/image-victor.jpg" class="absolute -top-12 left-1/2 -translate-x-1/2 rounded-full ring-4 ring-white" alt="Victor Crest">
+                    <p class="text-lg">
+                        <strong class="text-darkBlue">
+                            Victor Crest
+                        </strong>
+                        26
+                    </p>
+                    <p class="text-sm">
+                        London
+                    </p>
+                </div>
+    
+                <hr>
+              
+                <div class="flex justify-between px-12 py-6 lg:py-8">
+                    <div class="text-xs text-center text-darkGray">
+                        <strong class="text-lg text-darkBlue">
+                            80K
+                        </strong><br>
+                        Followers
+                    </div>
+                    <div class="text-xs text-center text-darkGray">
+                        <strong class="text-lg text-darkBlue">
+                            803K
+                        </strong><br>
+                        Likes
+                    </div>
+                    <div class="text-xs text-center text-darkGray">
+                        <strong class="text-lg text-darkBlue">
+                            1.4K
+                        </strong><br>
+                        Photos
+                    </div>
+                </div>
+            </main>
+            <footer class="text-xs text-white">
+                <p class="text-center">
+                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-darkBlue hover:uppercase font-bold">Frontend Mentor</a>. 
+                    Coded by <a href="https://github.com/JustinByrne" class="text-darkBlue hover:uppercase font-bold">Justin Byrne</a>.
+                </p>
+            </footer>
+        </div>
     </body>
 </html>
